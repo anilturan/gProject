@@ -12,13 +12,11 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case GET_MARVEL_CHARACTERS_REQ:
-            debugger
             return {
                 ...state,
                 loading: true,
             }
         case GET_MARVEL_CHARACTERS_SUCCESS:
-            debugger
             return {
                 ...state,
                 loading: false,

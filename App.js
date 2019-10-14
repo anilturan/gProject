@@ -4,7 +4,6 @@ import {Text} from 'react-native'
 
 const App = () => {
   return (
-  //  <Text> ajdja</Text> 
    <EntryPoint/>
   )
 }

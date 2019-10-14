@@ -28,7 +28,6 @@ const controlUnauthorizedStatus = response => {
     return false;
 }
 axiosInstance.interceptors.request.use(request => {
-    debugger
     //  const accessToken = getAccessMechanismCredentials().access_token;
     // if(!isNil(accessToken)&& request.url !== ApiUrl.login){
     // request.headers = {
@@ -42,7 +41,6 @@ axiosInstance.interceptors.request.use(request => {
 
 axiosInstance.interceptors.response.use(
     response => {
-        debugger
         return response
     }
 )

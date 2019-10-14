@@ -48,9 +48,8 @@ class App extends Component {
                 <Text style={styles.sectionTitle}>Step One</Text>
                 <Text style={styles.sectionDescription}>
                   {results && results.map(item => {
-                    return <Text key={item.id}> {item.name}</Text>
+                    return <Text style={{color:'#D35400'}} key={item.id}> {item.name}</Text>
                   })}
-                  {console.log(characters,"ben yazdım")}
                 </Text>
               </View>
             </View>
@@ -103,7 +102,6 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-  debugger
   return {
     characters: state.HomeState.characters
   }
